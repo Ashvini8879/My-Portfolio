@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-app.secret_key = "ashu4567"
+app.secret_key = ""
 MAIL_USERNAME = ""
 MAIL_PASSWORD = ""
 
