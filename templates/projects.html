@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="container my-5">
+    <h2 class="text-center mb-4">Latest Projects</h2>
+    <div class="row g-4">
+        {% for project in projects %}
+        <div class="col-md-4">
+            <a href="/projects/{{ project.id }}" class="text-decoration-none">
+                <div class="card h-100 shadow">
+                    <img src="{{ url_for('static', filename='img/' + project.image) }}" class="card-img-top" alt="...">
+                   <div class="card-body">
+    <h5 class="card-title">{{ project.title }}</h5>
+    <p class="card-text"><strong>Language:</strong> {{ project.language }}</p>
+    <br><a href="{{ project.github }}" class="btn btn-sm btn-outline-dark" target="_blank">🔗 GitHub</a>
+</div>
+
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

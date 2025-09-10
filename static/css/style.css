@@ -1,0 +1,449 @@
+/* Enhanced Styling for Ashu's Portfolio - Dark Blue Theme + About Section with Bars */
+
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #001f3f, #001933);
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #f1f1f1;
+}
+.home-text {
+    padding-left: 60px; /* Just a little push to the right */
+}
+
+.wave-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 10;
+}
+
+.custom-wave {
+  display: block;
+  width: 100%;
+  height: 180px;
+}
+
+a {
+    color: #66d9ef;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 25px;
+    background-color: #002b5c !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #66d9ef !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #66d9ef !important;
+}
+
+/* Home Section */
+
+.lead {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #9cc6cb;
+    text-shadow: 0 0 5px #66d9ef55;
+    line-height: 1.7;
+}
+
+.styled-square-image {
+    width: 100%;
+    max-width: 330px;
+    height: 570px;
+    border-radius: 0; /* Square */
+    border: 4px solid #c8e4e9;
+    box-shadow: 0 0 20px #c88181aa, 0 0 40px #66d9ef55;
+    background-color: transparent;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+
+/* project  */
+/* Card container styling */
+.card {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background-color: #121316;
+}
+
+.card:hover {
+    border-color: #b7d8e1;
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.card-img-top {
+    height: 340px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Title text */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fdfeff;
+    margin-bottom: 10px;
+}
+
+/* Language text and other details */
+.card-text {
+    color: #d5cdcd;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+/* GitHub button styling */
+.card .btn-outline-dark {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border-color: #333;
+    color: #f9f9f9;
+    background-color: #003b6f;
+    transition: all 0.3s ease;
+}
+
+.card .btn-outline-dark:hover {
+    background-color: #00c6ff;
+    color: #fff;
+    border-color: #00c6ff;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+}
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: inherit;
+}
+
+
+
+#home-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: radial-gradient(circle at top left, #003366, #000d1a);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+#home-box .left-content {
+    flex: 1 1 45%;
+    font-size: 1.8rem;
+}
+
+#home-box .left-content p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+#home-box .right-content {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#home-box .styled-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff44;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+#home-box .social-icons {
+    margin-top: 25px;
+}
+
+#home-box .social-icons i {
+    font-size: 2.2rem;
+    margin-right: 25px;
+    color: #66d9ef;
+    transition: transform 0.3s ease;
+}
+
+#home-box .social-icons i:hover {
+    transform: scale(1.3);
+    color: #ffffff;
+}
+.skills-orbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #66d9ef33;
+  border-radius: 50%;
+  background-color: #001933;
+}
+
+.center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 150px;
+  background-color: #001933;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #66d9ef;
+  border: 2px solid #66d9ef;
+  z-index: 2;
+}
+
+.orbit-circle {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #37bbd9;
+  color: #fff;
+  text-align: center;
+  line-height: 70px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00cfff99;
+  z-index: 1;
+}
+
+.hobbies-container {
+  gap: 60px;
+  padding: 30px 0;
+}
+
+.hobby-item {
+  margin: 20px;
+}
+
+
+.hobby-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #26444a;
+  box-shadow: 0 0 10px #caf2fa88;
+  transition: transform 0.3s ease;
+}
+
+.hobby-img:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    scroll-margin-top: 80px; /* adjust to match your navbar height */
+}
+
+#about {
+    background-color: #00152a;
+    border-radius: 20px;
+    padding: 60px 30px;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #66d9ef;
+    margin-bottom: 30px;
+}
+
+.about-box {
+    background-color: #002d5c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.about-box h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #66d9ef;
+    text-align: center;
+}
+
+.about-box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.about-box ul li {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.about-box ul li::before {
+    content: '\2022';
+    color: #66d9ef;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Skill Bars */
+.skill-bar {
+    margin-bottom: 20px;
+}
+
+.skill-bar .label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    display: block;
+}
+
+.skill-bar .bar {
+    background-color: #003b6f;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25px;
+}
+
+.skill-bar .bar-fill {
+    background-color: #ff5e57;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    transition: width 0.6s ease;
+}
+
+/* Sparkling Background Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #home-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home-box .styled-image {
+        max-width: 80%;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    .about-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Contact Section */
+form {
+    background-color: #00152a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+form input,
+form textarea {
+    background-color: #002d5c;
+    border: 1px solid #66d9ef;
+    color: #ffffff;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #cccccc;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #66d9ef;
+    box-shadow: 0 0 5px rgba(102, 217, 239, 0.5);
+    background-color: #002d5c;
+    color: #ffffff;
+}
+
+form button.btn-primary {
+    background-color: #66d9ef;
+    border: none;
+    color: #00152a;
+    font-weight: bold;
+}
+
+form button.btn-primary:hover {
+    background-color: #4bb8d6;
+    color: #00152a;
+}
+section.container {
+    background-color: #001020;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
