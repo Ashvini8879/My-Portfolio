@@ -3,8 +3,8 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__)
 app.secret_key = "ashu4567"
-MAIL_USERNAME = "ashudavale@gmail.com"
-MAIL_PASSWORD = "iaqe sabd ezvu hfwj"
+MAIL_USERNAME = ""
+MAIL_PASSWORD = ""
 
 # === Dummy project data ===
 projects = [
